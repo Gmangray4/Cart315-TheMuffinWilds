@@ -274,13 +274,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124851338}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.01087752, y: 0.7711756, z: 0.63632905, w: -0.015975535}
+  m_LocalPosition: {x: 0.44, y: -8.19, z: 6.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1324969780}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -78.841, y: -168.53001, z: 348.945}
 --- !u!1 &858823421
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +354,37 @@ MonoBehaviour:
   stayCloseToPoint: 0
   anchorPoint: {fileID: 0}
   maxDistanceFromAnchor: 0
+--- !u!1 &1324969779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324969780}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1324969780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324969779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 124851341}
+  m_Father: {fileID: 1499663721}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1345267807
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +554,7 @@ Transform:
   m_LocalScale: {x: 5.7686534, y: 5.7686534, z: 5.7686534}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415731955
 GameObject:
@@ -614,6 +645,7 @@ GameObject:
   - component: {fileID: 1499663721}
   - component: {fileID: 1499663720}
   - component: {fileID: 1499663719}
+  - component: {fileID: 1499663722}
   m_Layer: 0
   m_Name: WolfDoggo
   m_TagString: Untagged
@@ -681,9 +713,26 @@ Transform:
   - {fileID: 37116196}
   - {fileID: 1345267808}
   - {fileID: 1415731956}
+  - {fileID: 1324969780}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1499663722
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499663718}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
 --- !u!1 &1567752108
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1865969098
 GameObject:
@@ -855,7 +904,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6470720062861937012
 PrefabInstance:
@@ -907,7 +956,7 @@ PrefabInstance:
     - target: {fileID: 2976980966878896913, guid: 09b745a5b3fa81a4d8106f7a3295a34a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2976980966878896913, guid: 09b745a5b3fa81a4d8106f7a3295a34a,
         type: 3}
