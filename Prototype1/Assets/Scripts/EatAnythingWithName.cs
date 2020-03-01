@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eat : MonoBehaviour
+public class EatAnythingWithNames : MonoBehaviour
 {
     [SerializeField] private Transform Player;
     [SerializeField] private Transform respawnPoint;

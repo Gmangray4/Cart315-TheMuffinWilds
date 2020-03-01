@@ -336,7 +336,7 @@ MonoBehaviour:
     cachePoint: 0
   movementSpeed: 1
   rotationSpeed: 360
-  animationStatesComponent: {fileID: 6470720062861937019}
+  animationStatesComponent: {fileID: 0}
   animationStates:
   - {fileID: 1865969099}
   sounds: []
@@ -350,7 +350,7 @@ MonoBehaviour:
   variables: []
   floorLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   stayCloseToPoint: 0
   anchorPoint: {fileID: 0}
   maxDistanceFromAnchor: 0
@@ -775,6 +775,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1587789570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1587789572}
+  - component: {fileID: 1587789571}
+  m_Layer: 0
+  m_Name: AnimationStates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1587789571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587789570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8f81bc193daf543bf6a41cdb398b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Untitled
+  startFrame: 0
+  endFrame: 0
+  speed: 1
+  animationWrapMode: 2
+  crossFadeIn: 0
+  crossFadeOut: 0
+  transitionTime: 0.2
+  foldoutOpen: 0
+--- !u!4 &1587789572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587789570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0784404, y: 2.0784404, z: 2.0784404}
+  m_Children: []
+  m_Father: {fileID: 6470720062861937014}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1865969098
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,6 +909,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2040290267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040290268}
+  - component: {fileID: 2040290269}
+  m_Layer: 0
+  m_Name: States
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040290268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040290267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6470720062861937014}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040290269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040290267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8148169e3ae18f45ae37c28ef492951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveId: -1
+  isEnabled: 1
+  name: Wander
+  triggers: []
+  ownsObjectFinder: 0
+  objectFinder:
+    useCustomTags: 0
+    tags:
+    - Player
+    cachePoint: 0
+  movementSpeed: 1
+  rotationSpeed: 360
+  animationStatesComponent: {fileID: 6470720062861937019}
+  animationStates:
+  - {fileID: 1587789571}
+  sounds: []
+  spawnItemsOnStateEnter: 0
+  itemSpawnMode: 0
+  itemSpawnPoint: {x: 0, y: 0, z: 0}
+  itemSpawnTfm: {fileID: 0}
+  exactPosition: 0
+  totalAmount: 1
+  spawnableItems: []
+  variables: []
+  floorLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  stayCloseToPoint: 1
+  anchorPoint: {fileID: 1892872774}
+  maxDistanceFromAnchor: 0
 --- !u!1001 &6470720062861937012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1032,9 +1157,9 @@ MonoBehaviour:
   aiTransform: {fileID: 6470720062861937014}
   useSightTransform: 0
   sightTransform: {fileID: 0}
-  initialState: {fileID: 858823423}
+  initialState: {fileID: 2040290269}
   states:
-  - {fileID: 858823423}
+  - {fileID: 2040290269}
   triggers: []
   objectFinder:
     useCustomTags: 0
@@ -1051,7 +1176,7 @@ MonoBehaviour:
   keepAgentUpright: 1
   health: 100
   maxHealth: 100
-  statesGameObject: {fileID: 858823421}
+  statesGameObject: {fileID: 2040290267}
   animationCallbackComponent: {fileID: 0}
   animationCallbackMethodName: 
   animationStates: {fileID: 0}
@@ -1069,10 +1194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d50f8335b4b0714185228ef68705d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationType: 2
+  animationType: 0
   states:
-  - {fileID: 1865969099}
-  animationStatesGameObject: {fileID: 1865969098}
+  - {fileID: 1587789571}
+  animationStatesGameObject: {fileID: 1587789570}
 --- !u!65 &6470720062861937020
 BoxCollider:
   m_ObjectHideFlags: 0
