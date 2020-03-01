@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 37116196}
   - component: {fileID: 37116198}
   - component: {fileID: 37116197}
+  - component: {fileID: 37116199}
   m_Layer: 0
   m_Name: grp1_2
   m_TagString: Untagged
@@ -198,6 +199,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37116195}
   m_Mesh: {fileID: -3821164108456987792, guid: a8c166d02c115ea4faaff1ffc1cf5c7a, type: 3}
+--- !u!114 &37116199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37116195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1fe99f5f8d4d34dbeae6a3c63bfe59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 0
 --- !u!1 &124851338
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +223,7 @@ GameObject:
   - component: {fileID: 124851341}
   - component: {fileID: 124851340}
   - component: {fileID: 124851339}
+  - component: {fileID: 124851342}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -274,13 +289,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124851338}
-  m_LocalRotation: {x: -0.01087752, y: 0.7711756, z: 0.63632905, w: -0.015975535}
-  m_LocalPosition: {x: 0.44, y: -8.19, z: 6.89}
+  m_LocalRotation: {x: -0.014869032, y: 0.91700673, z: 0.39840344, w: -0.012346923}
+  m_LocalPosition: {x: 0.5, y: -8.73, z: 10.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1324969780}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -78.841, y: -168.53001, z: 348.945}
+  m_LocalEulerAnglesHint: {x: -46.912003, y: -177.106, z: 356.886}
+--- !u!114 &124851342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124851338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369fa8305e606b84792b9515d5744c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationSpeed: 1
+  Target: {fileID: 1324969780}
+  Player: {fileID: 1499663721}
 --- !u!1 &858823421
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,8 +677,9 @@ GameObject:
   - component: {fileID: 1499663719}
   - component: {fileID: 1499663722}
   - component: {fileID: 1499663723}
+  - component: {fileID: 1499663724}
   m_Layer: 0
-  m_Name: WolfDoggo
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -747,6 +778,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2161903, y: 9.699337, z: 5.9304056}
   m_Center: {x: -0.000003486032, y: 1.0281926, z: 2.9588466}
+--- !u!114 &1499663724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499663718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1fe99f5f8d4d34dbeae6a3c63bfe59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 10
 --- !u!1 &1567752108
 GameObject:
   m_ObjectHideFlags: 0
