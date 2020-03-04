@@ -1,0 +1,80 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 21.11.2011 11:35:51
+
+newmtl wall_oven_metall
+	Ns 62.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.2157 0.2157 0.2157
+	Kd 0.2157 0.2157 0.2157
+	Ks 0.3510 0.3510 0.3510
+	Ke 0.0000 0.0000 0.0000
+
+newmtl wall_oven_steel
+	Ns 70.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.3510 0.3510 0.3510
+	Ke 0.0000 0.0000 0.0000
+	map_Ka wall_oven_steel.jpg
+	map_Kd wall_oven_steel.jpg
+
+newmtl wall_oven_panel
+	Ns 60.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.5850 0.5850 0.5850
+	Ke 0.0000 0.0000 0.0000
+	map_Ka wall_oven_panel.jpg
+	map_Kd wall_oven_panel.jpg
+
+newmtl wall_oven_metall_gray
+	Ns 70.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5216 0.5216 0.5216
+	Kd 0.5216 0.5216 0.5216
+	Ks 0.8190 0.8190 0.8190
+	Ke 0.0000 0.0000 0.0000
+
+newmtl wall_oven_logo
+	Ns 70.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1.0000 1.0000 1.0000
+	Kd 1.0000 1.0000 1.0000
+	Ks 0.8190 0.8190 0.8190
+	Ke 0.0000 0.0000 0.0000
+	map_Ka wall_oven_logo.jpg
+	map_Kd wall_oven_logo.jpg
+
+newmtl wall_oven_glass
+	Ns 65.0000
+	Ni 1.5000
+	d 0.2000
+	Tr 0.8000
+	Tf 0.2000 0.2000 0.2000 
+	illum 2
+	Ka 0.0784 0.0784 0.0784
+	Kd 0.0784 0.0784 0.0784
+	Ks 0.3510 0.3510 0.3510
+	Ke 0.0000 0.0000 0.0000
