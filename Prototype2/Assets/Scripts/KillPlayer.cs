@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EatAnythingWithNames : MonoBehaviour
+public class KillPlayer : MonoBehaviour
 {
     [SerializeField] private Transform Player;
     [SerializeField] private Transform respawnPoint;
@@ -10,9 +10,9 @@ public class EatAnythingWithNames : MonoBehaviour
     void OnTriggerEnter(Collider Player)
     {
         Debug.Log("OnCollisionEnter works.");
-        if (Player.gameObject.name == "FPSController")
+        if (Player.gameObject.name == "Player")
         {
-            Debug.Log("The GameObject name is Cube.");
+            Debug.Log("The GameObject name is Player.");
             Player.transform.position = respawnPoint.transform.position;
          
         }
