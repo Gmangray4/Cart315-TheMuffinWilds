@@ -17,11 +17,21 @@ public class OvenCreate1 : MonoBehaviour
     // Update is called once per frame
    public void SpawnObject()
     {
-        Instantiate(spawnee, transform.position, transform.rotation);
-        if (stopSpawing)
+        GameObject CurrentOven = GameObject.Find("GlobalEffects");
+        OvenSelector ovenSelect = CurrentOven.GetComponent<OvenSelector>();
+        if (ovenSelect.oven == 1)
         {
-            CancelInvoke("SpawnObject");
-            
+            print("is 1");
+            Instantiate(spawnee, transform.position, transform.rotation);
+            if (stopSpawing)
+            {
+                CancelInvoke("SpawnObject");
+
+            }
+        }
+        if (ovenSelect.oven != 1)
+        {
+            print("not oven 1");
         }
     }
 }
