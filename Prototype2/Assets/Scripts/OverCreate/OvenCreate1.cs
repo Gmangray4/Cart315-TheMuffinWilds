@@ -37,7 +37,7 @@ public class OvenCreate1 : MonoBehaviour
         }
         if (ovenSelect.oven != 1)
         {
-            print("not oven 1");
+         
            
         }
     }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OvenInnerLight1 : MonoBehaviour
+public class OvenInnerLight4 : MonoBehaviour
 {
     float lightStep = 1;
     float lightVal = 0;
@@ -10,7 +10,7 @@ public class OvenInnerLight1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,12 +20,12 @@ public class OvenInnerLight1 : MonoBehaviour
         GameObject CurrentOven = GameObject.Find("GlobalEffects");
         OvenSelector ovenSelect = CurrentOven.GetComponent<OvenSelector>();
 
-        if (lightVal >= 0 && lightVal <= 10 && ovenSelect.oven == 1 )
+        if (lightVal >= 0 && lightVal <= 10 && ovenSelect.oven == 4)
         {
             lightVal += lightStep * Time.deltaTime;
-            
+
         }
-        if (lightVal > 0 && ovenSelect.oven != 1)
+        if (lightVal >= 0 && ovenSelect.oven != 4)
         {
             lightVal -= lightStep * Time.deltaTime;
         }
