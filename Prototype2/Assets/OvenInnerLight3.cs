@@ -6,6 +6,7 @@ public class OvenInnerLight3 : MonoBehaviour
 {
     float lightStep = 1;
     float lightVal = 0;
+    float currentlight = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,11 @@ public class OvenInnerLight3 : MonoBehaviour
         GameObject CurrentOven = GameObject.Find("GlobalEffects");
         OvenSelector ovenSelect = CurrentOven.GetComponent<OvenSelector>();
 
+        if (lightVal < 0)
+        {
+            lightVal = 1;
+        }
+
         if (lightVal >= 0 && lightVal <= 10 && ovenSelect.oven == 3)
         {
             lightVal += lightStep * Time.deltaTime;
@@ -30,6 +36,7 @@ public class OvenInnerLight3 : MonoBehaviour
             lightVal -= lightStep * Time.deltaTime;
         }
 
-        this.GetComponent<Light>().intensity = lightVal;
+        currentlight = lightVal;
+        this.GetComponent<Light>().intensity = currentlight;
     }
 }
