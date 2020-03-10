@@ -9,7 +9,7 @@ namespace Invector
         public string[] textureParameters = new string[] { "_MainTex" };
         private Vector2 offSet;
 
-        void Update()
+        void FixedUpdate()
         {
             offSet.x += speed.x * Time.deltaTime;
             offSet.y += speed.y * Time.deltaTime;
