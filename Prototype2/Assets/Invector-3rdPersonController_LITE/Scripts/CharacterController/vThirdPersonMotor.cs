@@ -33,9 +33,9 @@ namespace Invector.vCharacterController
         [Tooltip("Rotate or not while airborne")]
         public bool jumpAndRotate = true;
         [Tooltip("How much time the character will be jumping")]
-        public float jumpTimer = 0.3f;
+        public float jumpTimer = 0.0f;
         [Tooltip("Add Extra jump height, if you want to jump only with Root Motion leave the value with 0.")]
-        public float jumpHeight = 4f;
+        public float jumpHeight = 10f;
 
         [Tooltip("Speed that the character will move while airborne")]
         public float airSpeed = 5f;
