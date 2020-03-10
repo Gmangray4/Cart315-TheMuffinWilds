@@ -695,84 +695,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5563b2c1cf35cae4f8490dfea2d2aa41, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!1001 &213291884
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1062530430384142869, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_Name
-      value: Ai-Squid (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530430384142874, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1062530431246133991, guid: a25c03c2701bc3043a4ac23c9a90aaba,
-        type: 3}
-      propertyPath: anchorPoint
-      value: 
-      objectReference: {fileID: 1892872774}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a25c03c2701bc3043a4ac23c9a90aaba, type: 3}
-=======
 --- !u!1 &216975978
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,11 +822,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 882f216176ee5e458c783ed938d58345caaf555e
-=======
->>>>>>> parent of 1c5cc71... Crazy squid fight in sky!
-=======
->>>>>>> parent of 1c5cc71... Crazy squid fight in sky!
 --- !u!1 &262688402
 GameObject:
   m_ObjectHideFlags: 0
