@@ -7,9 +7,9 @@ namespace Invector.vCharacterController
     {
         #region Variables                
 
-        public const float walkSpeed = 0.5f;
-        public const float runningSpeed = 1f;
-        public const float sprintSpeed = 1.5f;
+        public const float walkSpeed = 20f;
+        public const float runningSpeed = 30f;
+        public const float sprintSpeed = 40f;
 
         #endregion  
 

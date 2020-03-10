@@ -146,7 +146,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3242706}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 01571ba68fb2dad46aa03094ab219579, type: 2}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: c4989d9adc682264b9a0e8cde5960ba2, type: 2}
   m_EnableTreeColliders: 1
@@ -174,7 +174,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -203,7 +203,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3242706}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 01571ba68fb2dad46aa03094ab219579, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -969,13 +969,13 @@ MonoBehaviour:
     runningSpeed: 4
     sprintSpeed: 6
   strafeSpeed:
-    movementSmooth: 6
+    movementSmooth: 13.3
     animationSmooth: 0.2
     rotationSpeed: 16
-    walkByDefault: 0
-    rotateWithCamera: 0
-    walkSpeed: 2
-    runningSpeed: 4
+    walkByDefault: 1
+    rotateWithCamera: 1
+    walkSpeed: 20
+    runningSpeed: 30
     sprintSpeed: 6
   jumpWithRigidbodyForce: 0
   jumpAndRotate: 1
@@ -1026,11 +1026,11 @@ MonoBehaviour:
     walkSpeed: 2
     runningSpeed: 4
     sprintSpeed: 6
-  jumpWithRigidbodyForce: 0
+  jumpWithRigidbodyForce: 1
   jumpAndRotate: 1
   jumpTimer: 0.3
   jumpHeight: 4
-  airSpeed: 5
+  airSpeed: 20
   airSmooth: 6
   extraGravity: -10
   limitFallVelocity: -15
@@ -1070,6 +1070,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &737782601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737782592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a050a06f1bb64b24b84fa84985678689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &763430031
 PrefabInstance:
   m_ObjectHideFlags: 0
