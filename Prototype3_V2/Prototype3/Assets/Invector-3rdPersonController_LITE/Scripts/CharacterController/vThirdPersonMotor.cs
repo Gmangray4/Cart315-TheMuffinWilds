@@ -53,7 +53,7 @@ namespace Invector.vCharacterController
         public float groundMinDistance = 0.25f;
         public float groundMaxDistance = 0.5f;
         [Tooltip("Max angle to walk")]
-        [Range(30, 80)] public float slopeLimit = 75f;
+        [Range(30, 80)] public float slopeLimit = 70f;
         #endregion
 
         #region Components
@@ -82,7 +82,7 @@ namespace Invector.vCharacterController
         }
         internal bool isGrounded { get; set; }
         internal bool isSprinting { get; set; }
-        public bool stopMove { get; protected set; }
+        public bool stopMove { get;  set; }
 
         internal float inputMagnitude;                      // sets the inputMagnitude to update the animations in the animator controller
         internal float verticalSpeed;                       // set the verticalSpeed based on the verticalInput
