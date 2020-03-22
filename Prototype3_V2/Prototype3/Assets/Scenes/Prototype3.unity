@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4175,7 +4175,96 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1081034900393838782, guid: 7fad2664da156ec419179fb87bbf13d1,
+=======
+    - target: {fileID: 737782600, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782600, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782600, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782600, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782597, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: extraGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782597, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782597, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: useContinuousSprint
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782597, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: useRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782597, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: rotateByWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 737782601, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 737782601, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 307898c4a35a24c4dac9c9590a57da32, type: 3}
+--- !u!1001 &1663364022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6033190253434476218, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_Name
+      value: vThirdPersonCamera_LITE Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 57.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 155.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0013653951
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9818259
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.18964753
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033190253434476219, guid: 9924f457291a8064782ceea5d50f2a4b,
+>>>>>>> 0be7e48397a44cc0cc311dc07ffa6174532843e4
         type: 3}
       propertyPath: Player
       value: 
