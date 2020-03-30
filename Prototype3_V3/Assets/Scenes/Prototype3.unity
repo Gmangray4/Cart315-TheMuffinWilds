@@ -644,10 +644,12 @@ MonoBehaviour:
   aiTransform: {fileID: 117242740}
   useSightTransform: 0
   sightTransform: {fileID: 0}
-  initialState: {fileID: 2107095344}
+  initialState: {fileID: 2107095343}
   states:
   - {fileID: 2107095344}
-  triggers: []
+  - {fileID: 2107095343}
+  triggers:
+  - {fileID: 2107095341}
   objectFinder:
     useCustomTags: 0
     tags:
@@ -15395,6 +15397,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2107095340}
   - component: {fileID: 2107095344}
+  - component: {fileID: 2107095343}
+  - component: {fileID: 2107095342}
+  - component: {fileID: 2107095341}
   m_Layer: 0
   m_Name: States
   m_TagString: Untagged
@@ -15416,7 +15421,57 @@ Transform:
   m_Father: {fileID: 117242740}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2107095344
+--- !u!114 &2107095341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107095339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e16c48c66fdd14b976ec4366310b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveId: -1
+  transitionState: {fileID: 2107095343}
+  parentTrigger: {fileID: 0}
+  subTriggers: []
+  ownsObjectFinder: 0
+  objectFinder:
+    useCustomTags: 0
+    tags:
+    - Player
+    cachePoint: 0
+  invertResult: 0
+  distanceThreshold: 70
+  negotiationMode: 0
+--- !u!114 &2107095342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107095339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c46824ce97acd4d85d11318b8821d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveId: -1
+  transitionState: {fileID: 2107095344}
+  parentTrigger: {fileID: 0}
+  subTriggers: []
+  ownsObjectFinder: 0
+  objectFinder:
+    useCustomTags: 0
+    tags:
+    - Player
+    cachePoint: 0
+  invertResult: 0
+  distanceThreshold: 100
+  negotiationMode: 0
+--- !u!114 &2107095343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15431,14 +15486,15 @@ MonoBehaviour:
   saveId: -1
   isEnabled: 1
   name: Seek
-  triggers: []
+  triggers:
+  - {fileID: 2107095342}
   ownsObjectFinder: 0
   objectFinder:
     useCustomTags: 0
     tags:
     - Player
     cachePoint: 0
-  movementSpeed: 10
+  movementSpeed: 1
   rotationSpeed: 360
   animationStatesComponent: {fileID: 117242736}
   animationStates:
@@ -15459,5 +15515,50 @@ MonoBehaviour:
   distanceToTargetThreshold: 0.25
   encircleTarget: 0
   destroyTargetWhenReached: 0
-  getAsCloseAsPossible: 1
+  getAsCloseAsPossible: 0
   noMovementState: {fileID: 2107095344}
+--- !u!114 &2107095344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107095339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e36a2ed7b7c0e48b576ef3933c15d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveId: -1
+  isEnabled: 1
+  name: SeekSpeed
+  triggers: []
+  ownsObjectFinder: 0
+  objectFinder:
+    useCustomTags: 0
+    tags:
+    - Player
+    cachePoint: 0
+  movementSpeed: 25
+  rotationSpeed: 360
+  animationStatesComponent: {fileID: 117242736}
+  animationStates:
+  - {fileID: 1509597396}
+  sounds: []
+  spawnItemsOnStateEnter: 0
+  itemSpawnMode: 0
+  itemSpawnPoint: {x: 0, y: 0, z: 0}
+  itemSpawnTfm: {fileID: 0}
+  exactPosition: 0
+  totalAmount: 1
+  spawnableItems: []
+  variables: []
+  specifySeekTarget: 0
+  seekTarget: {fileID: 0}
+  seekTargetReachedState: {fileID: 2107095343}
+  noSeekTargetFoundState: {fileID: 2107095343}
+  distanceToTargetThreshold: 0.25
+  encircleTarget: 0
+  destroyTargetWhenReached: 0
+  getAsCloseAsPossible: 1
+  noMovementState: {fileID: 2107095343}
