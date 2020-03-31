@@ -4805,7 +4805,7 @@ PrefabInstance:
     - target: {fileID: 1081034900393838776, guid: 7fad2664da156ec419179fb87bbf13d1,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1081034900393838776, guid: 7fad2664da156ec419179fb87bbf13d1,
         type: 3}
@@ -4898,6 +4898,11 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 535028646}
+    - target: {fileID: 1081034900393838783, guid: 7fad2664da156ec419179fb87bbf13d1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fad2664da156ec419179fb87bbf13d1, type: 3}
 --- !u!1 &1758061161
