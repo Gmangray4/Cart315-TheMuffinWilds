@@ -18,7 +18,7 @@ public class EatANYONE : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject && col.gameObject.name != "Terrain" && col.gameObject.name != "Oven1" && col.gameObject.name != "Oven2" && col.gameObject.name != "Oven3" && col.gameObject.name != "Oven4" && col.gameObject.name != "Oven5" && col.gameObject.name != "Oven6")
+        if (col.gameObject && col.gameObject.name != "Terrain" && col.gameObject.name != "Oven1" && col.gameObject.name != "Oven2" && col.gameObject.name != "Oven3" && col.gameObject.name != "Oven4" && col.gameObject.name != "Oven5" && col.gameObject.name != "Oven6" && col.gameObject.name != "OutSideWall")
         {
             Debug.Log("Collision Decected");
             Destroy(col.gameObject);
